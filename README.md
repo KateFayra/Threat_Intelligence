@@ -104,7 +104,7 @@ The workers perform the queries in parallel, then send the responses back to the
 
 This project also contains unit tests which have 93% code coverage.
 
-Note: If compiling from source, you will need to specify your API key for AbuseIPDB in AbuseIPDBQuery.cs and for Shodan in ShodanQuery.cs. The program will still function without the API keys, you will just be unable to retrieve results for those two queries.
+Note: If compiling from source, you will need to specify your API key for AbuseIPDB.com in AbuseIPDBQuery.cs, for Shodan.io in ShodanQuery.cs, and for whoisxmlapi.com in WhoisQuery.cs. The program will still function without the API keys, but you will be unable to retrieve results for those three queries.
 
 ### Future Improvements
 Additional features I would like to add:
