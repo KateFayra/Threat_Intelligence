@@ -114,11 +114,11 @@ Note: If compiling from source, you will need to specify your API key for AbuseI
 ### Future Improvements
 Additional features I would like to add:
 
+- Number of workers and server hostnames/IPs/ports should be read from a config file.
+- API keys should be read from a config file.
 - Reverse DNS should be able to provide multiple hostnames/domain names.
 - If a DNS lookup is performed and IP addresses are obtained, there should be an option to automatically retrieve IP address query information without the client needing to make a second request. (Also similar functionality if a Reverse DNS lookup is performed and domains are retrieved from an IP address.)
 - Allow queries for multiple IPs and domains simultaneously.
-- Number of workers and worker hostnames/IPs/ports should be read from a config file.
-- API keys should be read from a config file.
 - Use authentication when communicating between API server and workers.
 - Add an endpoint for binaries, and return scan results from Virustotal.
 - Add an endpoint for URLs and use Google's safe browsing API https://developers.google.com/safe-browsing
