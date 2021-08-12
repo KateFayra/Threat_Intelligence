@@ -114,6 +114,7 @@ Additional features I would like to add:
 - Allow queries for multiple IPs and domains simultaneously.
 - Number of workers and worker hostnames/IPs/ports should be read from a config file.
 - API keys should be read from a config file.
+- Use authentication when communicating between API server and workers.
 - Add an endpoint for binaries, and return scan results from Virustotal.
 - Add an endpoint for URLs and use Google's safe browsing API https://developers.google.com/safe-browsing
 - Check if an IP is likely to be a VPN/Proxy. Also check if likely to be a datacenter or residential.
