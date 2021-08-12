@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Worker;
 using System;
 using System.Collections.Generic;
@@ -23,9 +23,6 @@ namespace Tests
         [TestMethod()]
         public void BuildParamJsonIPTest()
         {
-            //NameValueCollection requestParams = HttpUtility.ParseQueryString(new Uri(context.Request.Url.ToString()).Query);
-
-            //HttpListenerContext context = null; //= new HttpListenerContext();
             Tracker tracker = new Tracker(null);
             int nonce = 0;
             NameValueCollection requestParams = HttpUtility.ParseQueryString(new Uri("http://127.0.0.1:8080/ip/" + ip + "?Ping=true&GeoIP=true").Query);
@@ -34,16 +31,12 @@ namespace Tests
             Assert.AreEqual(json.Length, 2);
             Assert.AreEqual(json[0], "{\r\n  \"GeoIP\": \"" + ip + "\",\r\n  \"Nonce\": 0\r\n}");
             Assert.AreEqual(json[1], "{\r\n  \"Ping\": \"" + ip + "\",\r\n  \"Nonce\": 0\r\n}");
-            //WorkerQueryMethods.CreateQueryObjects(new )
         }
 
 
         [TestMethod()]
         public void BuildParamJsonDomainTest()
         {
-            //NameValueCollection requestParams = HttpUtility.ParseQueryString(new Uri(context.Request.Url.ToString()).Query);
-
-            //HttpListenerContext context = null; //= new HttpListenerContext();
             Tracker tracker = new Tracker(null);
             int nonce = 0;
             NameValueCollection requestParams = HttpUtility.ParseQueryString(new Uri("http://127.0.0.1:8080/domain/" + domain + "?DNS=true&RDAP=true").Query);
@@ -52,16 +45,12 @@ namespace Tests
             Assert.AreEqual(json.Length, 2);
             Assert.AreEqual(json[0], "{\r\n  \"DNS\": \"" + domain + "\",\r\n  \"Nonce\": 0\r\n}");
             Assert.AreEqual(json[1], "{\r\n  \"RDAP\": \"" + domain + "\",\r\n  \"Nonce\": 0\r\n}");
-            //WorkerQueryMethods.CreateQueryObjects(new )
         }
 
 
         [TestMethod()]
         public void CreateQueryObjectsTest()
         {
-            //NameValueCollection requestParams = HttpUtility.ParseQueryString(new Uri(context.Request.Url.ToString()).Query);
-
-            //HttpListenerContext context = null; //= new HttpListenerContext();
             Tracker tracker = new Tracker(null);
             int nonce = 0;
             NameValueCollection requestParams = HttpUtility.ParseQueryString(new Uri("http://127.0.0.1:8080/ip/" + ip + "?Ping=true&GeoIP=true").Query);
@@ -80,8 +69,6 @@ namespace Tests
             Assert.AreEqual(nonce, 0);
             Assert.AreEqual(list.Count, 1);
             Assert.AreEqual(list[0].GetName(), QueryParams.Ping);
-
-            //WorkerQueryMethods.CreateQueryObjects(new )
         }
 
     }
