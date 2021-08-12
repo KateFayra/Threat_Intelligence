@@ -35,27 +35,33 @@ Note that when using the optional parameters, only information for the specified
 
 #### Response Format
 
-`{`
-`"GeoIP" : { ... },`
-`"Ping":{...},`
-`"ReverseDNS":{...},`
-`"AbuseIPDB":{...},`
-	`"Shodan":{...}`
-`}`
+```
+{
+"GeoIP" : { ... },
+"Ping":{...},
+"ReverseDNS":{...},
+"AbuseIPDB":{...},
+"Shodan":{...}
+}
+```
 
 With the following values:
 
 - ReverseDNS
-`{`
-`"hostname": ... `
-`}`
+```
+{
+"hostname": ... 
+}
+```
 - Ping
-`{`
-`"Status": "Success", "TimedOut", etc`
-`"RoundTripTime": milliseconds`
-`"TimeToLive": ...`
-`"NumBytes": Number of bytes received in reply`
-`}`
+```
+{
+"Status": "Success", "TimedOut", etc
+"RoundTripTime": milliseconds
+"TimeToLive": ...
+"NumBytes": Number of bytes received in reply
+}
+```
 - GeoIP (See https://ip-api.com/docs/api:json)
 -  AbuseIPDB.com (See https://docs.abuseipdb.com/?shell#check-endpoint)
 - Shodan.io (See the `/shodan/host/{ip}`section on https://developer.shodan.io/api)
@@ -65,23 +71,27 @@ Example call: GET http://127.0.0.1:8080/domain/njlochner.com
 If no parameters are specified, DNS, RDAP, and Whois information will be returned. The response is provided as JSON. 
 
 #### Response Format
-`{`
-`"DNS" : { ... },`
-`"RDAP":{...},`
-`"Whois":{...}`
-`}`
+```
+{
+"DNS" : { ... },
+"RDAP":{...},
+"Whois":{...}
+}
+```
 	
 With the following values:
 
 - DNS
-`{`
-`"ips": {`
-` "0": IP address,`
-` "1": IP address,`
-`...`
-` "N": IP address`
-`}`
-`}`
+```
+{
+"ips": {
+ "0": IP address,
+ "1": IP address,
+...
+ "N": IP address
+}
+}
+```
     
 - RDAP  (See https://www.verisign.com/en_US/domain-names/registration-data-access-protocol/index.xhtml)
 - Whois (See https://whois.whoisxmlapi.com/documentation/making-requests)
