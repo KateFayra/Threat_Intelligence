@@ -104,6 +104,8 @@ The workers perform the queries in parallel, then send the responses back to the
 
 This project also contains unit tests which have 93% code coverage.
 
+Note: If compiling from source, you will need to specify your API key for AbuseIPDB in AbuseIPDBQuery.cs and for Shodan in ShodanQuery.cs. The program will still function without the API keys, you will just be unable to retrieve results for those two queries.
+
 ### Future Improvements
 Additional features I would like to add:
 
@@ -111,6 +113,7 @@ Additional features I would like to add:
 - If a DNS lookup is performed and IP addresses are obtained, there should be an option to automatically retrieve IP address query information without the client needing to make a second request. (Also similar functionality if a Reverse DNS lookup is performed and domains are retrieved from an IP address.)
 - Allow queries for multiple IPs and domains simultaneously.
 - Number of workers and worker hostnames/IPs/ports should be read from a config file.
+- API keys should be read from a config file.
 - Add an endpoint for binaries, and return scan results from Virustotal.
 - Add an endpoint for URLs and use Google's safe browsing API https://developers.google.com/safe-browsing
 - Check if an IP is likely to be a VPN/Proxy. Also check if likely to be a datacenter or residential.
