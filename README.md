@@ -114,27 +114,44 @@ Additional features I would like to add:
 ### Other relevant APIs/resources to use: 
 
 https://pulsedive.com/api/
+
 https://github.com/hslatman/awesome-threat-intelligence
+
 Proxy / VPN check https://www.ipqualityscore.com/ip-reputation-check
+
 SSL Cert info - https://threatintelligenceplatform.com/ssl-certificate-chain-api
  
 https://www.ripe.net/manage-ips-and-asns/db/support/querying-the-ripe-database
+
 https://team-cymru.com/community-services/ip-asn-mapping/
+
 https://attackerkb.com/
+
 https://www.reddit.com/r/datasets/comments/7vj5eg/cybersecurity_datasets/
+
 https://pentest-tools.com/website-vulnerability-scanning/website-scanner
+
 https://snyk.io/website-scanner/
+
 http://www.insecam.org/en/faq/
+
 Greynoise
+
 minemeld
 
 #### IP blacklists:
 https://zeltser.com/malicious-ip-blocklists/
+
 https://whatismyipaddress.com/blacklist-check
+
 https://www.threatstop.com/check-ioc
+
 https://dnschecker.org/ip-blacklist-checker.php
+
 https://avinetworks.com/docs/latest/ip-reputation/
+
 https://ipremoval.sms.symantec.com/
+
 https://www.projecthoneypot.org/list_of_ips.php
 
 
