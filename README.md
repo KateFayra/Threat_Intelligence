@@ -115,7 +115,7 @@ Additional features I would like to add:
 - Add an endpoint for URLs and use Google's safe browsing API https://developers.google.com/safe-browsing
 - Check if an IP is likely to be a VPN/Proxy. Also check if likely to be a datacenter or residential.
 - Improve IQuery Interface architecture to remove duplicate GetName() method in query classes, perhaps switching to use an Abstract class.
-- Containerize using Docker
+- Containerize using Docker.
 - Develop a front-end web-application which can take in a list of IPs, domains, binaries, URLs to query and display results.
 
 - Use mocking for some unit tests.
