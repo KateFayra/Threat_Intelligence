@@ -98,7 +98,7 @@ With the following values:
 
 ## Implementation Details
 
-This API was developed using C# .NET 5.0. The API server processes the request and determines which queries should run. Then it splits the queries evenly, and issues commands to multiple worker servers which can run on separate hosts. 
+This API was developed using C# .NET 5.0. The API server (ServiceInfoGatherer) processes the request and determines which queries should run. Then it splits the queries evenly, and issues commands to multiple worker servers which can run on separate hosts. 
 
 The workers perform the queries in parallel, then send the responses back to the API server after all queries have been finished. The API server then returns the JSON response back to the requesting client after all workers have returned responses. If one query fails on a worker (due to rate limiting or an error), successful queries from that worker will still be returned.
 
