@@ -1,6 +1,6 @@
 # Threat Intelligence
 
-An API which provides information for given IP addresses and domain names. Designed to be used to provide intelligence as part of a security incident response process. The API is running at http://threatintel.njlochner.com (IP: http://54.234.211.140/)
+An API which provides information for given IP addresses and domain names. Designed to be used to provide intelligence as part of a security incident response process.
 
 ## Features
 
@@ -26,10 +26,10 @@ The API provides two endpoints:
 
 ###  /ip/{ipAddress}
 
-Example call: GET http://threatintel.njlochner.com/ip/54.186.91.102
+Example call: GET http://threatintel.nikkifayra.com/ip/54.186.91.102
 If no parameters are specified, GeoIP, ReverseDNS, Ping, and AbuseIPDB.com information will be returned. The response is provided as JSON. 
 
-Shodan.io data is not provided by default due Shodan's API having an occasional delay of approx 15 seconds. To retrieve Shodan data, the 'Shodan=true' parameter must be specified. E.g. http://threatintel.njlochner.com/ip/54.186.91.102?Shodan=true 
+Shodan.io data is not provided by default due Shodan's API having an occasional delay of approx 15 seconds. To retrieve Shodan data, the 'Shodan=true' parameter must be specified. E.g. http://threatintel.nikkifayra.com/ip/54.186.91.102?Shodan=true 
 
 Note that when using the optional parameters, only information for the specified parameters will be shown. For example, in order to retrieve Shodan data and AbuseIPDB data, `?Shodan=true&AbuseIPDB=true` must be specified.
 
