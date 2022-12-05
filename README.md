@@ -67,7 +67,7 @@ With the following values:
 - Shodan.io (See the `/shodan/host/{ip}`section on https://developer.shodan.io/api)
 
 ### /domain/{domainName}
-Example call: GET http://threatintel.njlochner.com/domain/njlochner.com
+Example call: GET http://threatintel.nikkifayra.com/domain/nikkifayra.com
 If no parameters are specified, DNS, RDAP, and Whois information will be returned. The response is provided as JSON. 
 
 #### Response Format
